@@ -19,7 +19,8 @@ URL="https://${USER_NAME}:${TOKEN}@github.com/${USER_NAME}/${REPO}.git"
 echo "→ push main"
 GIT_CONFIG_GLOBAL=/dev/null GIT_TERMINAL_PROMPT=0 git push "$URL" main
 echo "→ push tags"
-GIT_CONFIG_GLOBAL=/dev/null GIT_TERMINAL_PROMPT=0 git push "$URL" --tags
+# tag 已经存在时这步失败也没关系，不阻塞
+GIT_CONFIG_GLOBAL=/dev/null GIT_TERMINAL_PROMPT=0 git push "$URL" --tags || true
 echo "完成：https://github.com/${USER_NAME}/${REPO}"
 
 if [ "$1" = "--release" ]; then

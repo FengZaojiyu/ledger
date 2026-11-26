@@ -1,5 +1,9 @@
 # 小账本
 
+[![release](https://img.shields.io/github/v/release/FengZaojiyu/ledger?color=5B7CFF)](https://github.com/FengZaojiyu/ledger/releases)
+[![license](https://img.shields.io/github/license/FengZaojiyu/ledger)](LICENSE)
+[![size](https://img.shields.io/badge/APK-78%20KB-5B7CFF)](https://github.com/FengZaojiyu/ledger/releases/latest)
+
 一个 77 KB 的 Android 记账 App。**离线 · 无账号 · 无广告 · 无第三方库**，数据只存在本机 SQLite。
 
 除了记账，还带 AI 助手（自接 API）、攒钱目标、四格式导出、深色主题、桌面小组件和 HyperOS 超级岛。
@@ -12,8 +16,11 @@
 
 ## 下载
 
-- 直接安装：[dist/ledger-2.1.apk](dist/ledger-2.1.apk)（77 KB，arm64/arm32 通吃，纯 Java 无 native 库）
+**[⬇ 下载 ledger-2.1.apk](https://github.com/FengZaojiyu/ledger/releases/download/v2.1/ledger-2.1.apk)**（78 KB）
+
+- 全部版本：[Releases](https://github.com/FengZaojiyu/ledger/releases)
 - 系统要求：Android 5.0（API 21）及以上
+- 纯 Java，无 native 库，arm64 / arm32 / x86 通吃
 
 > 安装包使用作者自签名证书。如果你想自己编译，见下方「构建」。
 

@@ -1,0 +1,21 @@
+# 构建产物
+out/
+compiled/
+gen/
+*.apk
+*.idsig
+aligned.apk
+base.apk
+
+# 但发布用的包要进仓库
+!dist/*.apk
+
+# 签名密钥（绝对不要提交）
+keys.jks
+*.jks
+*.keystore
+
+# 编辑器 / 系统
+.DS_Store
+*.swp
+.idea/

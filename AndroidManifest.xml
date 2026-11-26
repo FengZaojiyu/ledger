@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dsh.ledger"
+    android:versionCode="21"
+    android:versionName="2.1">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".StatsActivity" android:exported="false" />
+        <activity android:name=".SettingsActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".GoalActivity" android:exported="false" />
+        <activity android:name=".GoalEditActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <receiver android:name=".LedgerWidget" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <activity android:name=".ChatActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>

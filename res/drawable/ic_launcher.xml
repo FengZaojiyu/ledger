@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- 圆角底 -->
+    <path android:fillColor="#4C6FFF"
+        android:pathData="M26,0 L82,0 A26,26 0 0 1 108,26 L108,82 A26,26 0 0 1 82,108 L26,108 A26,26 0 0 1 0,82 L0,26 A26,26 0 0 1 26,0 Z" />
+    <!-- 顶部柔光 -->
+    <path android:fillColor="#5E7DFF"
+        android:pathData="M26,0 L82,0 A26,26 0 0 1 108,26 L108,52 C78,68 36,46 0,60 L0,26 A26,26 0 0 1 26,0 Z" />
+    <!-- 账本底 -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M28,30 L74,30 A9,9 0 0 1 83,39 L83,78 A9,9 0 0 1 74,87 L28,87 A9,9 0 0 1 19,78 L19,39 A9,9 0 0 1 28,30 Z" />
+    <!-- 两条记录线 -->
+    <path android:fillColor="#B9C8FF"
+        android:pathData="M30,45 L62,45 L62,51 L30,51 Z M30,59 L52,59 L52,65 L30,65 Z" />
+    <!-- 右侧 AI 星 -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M74,60 L77.6,69.4 L87,73 L77.6,76.6 L74,86 L70.4,76.6 L61,73 L70.4,69.4 Z" />
+</vector>
